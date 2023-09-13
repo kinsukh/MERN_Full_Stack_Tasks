@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task7</title>
+</head>
+<body>
+    <style>
+        .div1{
+            background-color: #a22b55;
+            text-align: center;
+            padding: 2%;
+            margin: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: fit-content;
+        }
+        .div2{
+            background-color: #75203f;
+            text-align: center;
+            padding: 3%;
+            width: fit-content;
+            
+        }
+        .td1{
+            /* border: 1px solid black; */
+            width:200px;
+            text-align: justify;
+            color: white;
+            padding: 2px;
+        }
+        
+        .register{
+            border-radius: 5px;
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+        }
+        .inp-box{
+            width: 93%;;
+            padding: 5px;
+        }
+        .form-div{
+            text-align: center;
+        }
+        
+    </style>
+    
+    <div class="div1">
+        <div class="div2">
+            <div class="form-div">
+            <form >
+            <table>
+                <tr>
+                    <td class="td1">Name :</td>
+                    <td class="td1"><input class="inp-box" type="text" name="Name" placeholder="your name" ></td>
+                </tr>
+                <tr>
+                    <td class="td1">Email :</td>
+                    <td class="td1"><input class="inp-box" type="text" name="Email" placeholder="your email" ></td>
+                </tr>
+                <tr>
+                    <td class="td1">Password :</td>
+                    <td class="td1"><input class="inp-box" type="text" name="Password" placeholder="" ></td>
+                </tr>
+                <tr>
+                    <td class="td1">Phone Number :</td>
+                    <td class="td1"><input class="inp-box" type="text" name="Phone Number" placeholder="" ></td>
+                </tr>
+                <tr>
+                    <td class="td1">Gender :</td>
+                    <td class="td1">
+                        <label for="Radio">Male: </label>
+                        <input type="radio" name="Gender" value="Male" id="Radio" style="width: auto;">
+                        <label for="Radio">Female: </label>
+                        <input type="radio" name="Gender" value="Female" id="Radio" style="width: auto;">
+                        <label for="Radio">Other: </label>
+                        <input type="radio" name="Gender" value="Other" id="Radio" style="width: auto;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Language: </td>
+                    <td class="td1">
+                      <select name="Language" style="width: 200px;">
+                        <option>Select Language</option>
+                        <option>Hindi</option>
+                        <option>English</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Telugu</option>
+                        <option>Kannada</option>
+                        <option>Tamil</option>
+                        <option>Malayalam</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Zip Code: </td>
+                    <td class="td1"><input class="inp-box" type="number" name="ZipCode" id="zip"></td>
+                </tr>
+                <tr>
+                    <td class="td1">About: </td>
+                    <td class="td1"><textarea name="aboutyou" id="aby" cols="26" rows="2" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="register" type="button" name="Registration" id="reg" value="Register"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

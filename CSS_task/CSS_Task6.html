@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task6</title>
+</head>
+
+<body>
+    <style>
+        body{
+            text-align: center;
+            padding: 100px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        img{
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+    
+        .details{
+            width: 40%;
+            margin: auto;
+            text-align: left;
+        }
+    
+        .full-width{
+            width: 100%;
+            height: 25px;
+        }
+    
+        p{
+            margin-bottom: 0;
+        }
+    
+        #submit{
+            background-color: green;
+            color: white;
+            font-weight: 600;
+            width: 102%;
+            border: 0;
+            height: 30px;
+            margin: 20px 0;
+        }
+
+        #submit:hover{
+            background-color:rgba(76, 147, 5, 0.9) ;
+            border-color: aquamarine;
+            box-shadow: lightgreen;
+        }
+    
+        table{
+            margin-top: 10px;
+            width: 100%;
+            background-color: gainsboro;
+            padding: 10px;
+        }
+    
+        .left-align{
+            text-align: left;
+        }
+    
+        .right-align{
+            text-align: right;
+        }
+        
+        input:hover{
+            border-color: cadetblue ;
+            box-shadow: lightblue;
+            background-color: lightblue;
+        }
+    
+        button{
+            background-color: red;
+            color: white;
+            border: 0;
+            padding: 5px;
+            border-radius: 5px;
+            width: 70px;
+            height: 30px;
+            font-weight: 600;
+        }
+    </style>
+
+    <img src=profile.png alt="img">
+    <div class="details">
+
+        <p><strong>Username</strong></p>
+        <input class="full-width" type="text" name="username" placeholder="Enter Username">
+
+        <p><strong>Password</strong></p>
+        <input class="full-width" type="password" name="password" placeholder="Enter Password">
+
+        <input class="full-width" id="submit" type="submit" value="Login">
+
+        <input type="checkbox" id="Remember" value="Remember me">
+
+        <label for="Remember">Remember me</label>
+        
+        <table>
+        <tr>
+            <td class="left-align"><button>Cancel</button></td>
+            <td class="right-align">Forgot <a href="">password?</a></td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>

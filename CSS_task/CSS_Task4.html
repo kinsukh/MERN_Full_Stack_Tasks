@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task4</title>
+</head>
+<body>
+    <style>
+        body{
+        margin: 0;
+        }
+
+        .nav-item{
+        position: absolute;
+        height: 40px;
+        width: 250px;
+        margin-bottom: 10px;
+        padding: 20px;
+        color: white;
+        font-size: 120%;
+        border-radius: 0px 10px 10px 0px;
+        transform: translateX(-220px); 
+        transition: transform 0.3s ease;
+        }
+
+        .nav-item:hover {
+        transform: translateX(0); 
+        }
+
+        .item1{
+        background-color: darkgreen;
+        top: 30px;
+        }
+
+        .item2{
+        background-color: blue;
+        top: 130px;
+        }
+
+        .item3{
+        background-color: red;
+        top: 230px;
+        }
+
+        .item4{
+        background-color: black;
+        top: 330px;
+        }
+
+        .text{
+        padding-left: 150px;
+        padding-top: 20px;
+        }
+    </style>
+
+    <a href=""><div class="nav-item item1">Button 1</div></a>
+    <a href=""><div class="nav-item item2">Button 2</div></a>
+    <a href=""><div class="nav-item item3">Button 3</div></a>
+    <a href=""><div class="nav-item item4">Button 4</div></a>
+
+    <div class="text">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+</body>
+</html>
